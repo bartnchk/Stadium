@@ -1,0 +1,42 @@
+<?hotelsxml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="details" label="Достопримечательность">
+
+        <field name="id" type="hidden" />
+
+        <field name="title"
+               type="text"
+               label="Название"
+               class="inputbox"
+               required="true"
+               default="" />
+
+        <field name="description"
+               type="textarea"
+               label="Описание"
+               class="inputbox"
+               required="true"
+               rows="8"
+               default="" />
+
+        <field name="photo"
+               type="media"
+               label="Фото"
+               required="true"
+               directory="sights" />
+
+        <field name="published"
+               type="list"
+               label="Статус"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+    </fieldset>
+</form>

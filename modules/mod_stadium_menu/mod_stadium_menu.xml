@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="module" version="3.8.0" client="site" method="upgrade">
+
+	<name>Модуль меню</name>
+	<author>Zengineers</author>
+	<authorEmail>zengineers.company@gmail.com</authorEmail>
+	<creationDate>21.09.2017</creationDate>
+	<version>1.0.0</version>
+	<description>Модуль отображения меню</description>
+
+	<files>
+
+		<filename module="mod_stadium_menu">mod_stadium_menu.php</filename>
+		<filename>mod_stadium_menu.xml</filename>
+		<folder>tmpl</folder>
+
+	</files>
+
+</extension>

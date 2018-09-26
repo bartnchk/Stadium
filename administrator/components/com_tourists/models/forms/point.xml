@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="point" label="Точка">
+
+        <field name="title"
+               type="text"
+               label="Название" />
+
+        <field name="description"
+               type="textarea"
+               rows="8"
+               label="Описание" />
+
+        <field name="address"
+               type="text"
+               label="Адрес" />
+
+        <field name="phones"
+               type="text"
+               label="Номер телефона" />
+
+        <field name="email"
+               type="text"
+               label="E-mail" />
+
+        <field name="icon"
+               type="media"
+               directory="points/icons"
+               label="Иконка" />
+
+        <field name="map"
+               type="media"
+               directory="points/maps"
+               label="Карта" />
+
+        <field name="id" type="hidden" />
+
+    </fieldset>
+</form>

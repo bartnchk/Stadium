@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали услуги">
+
+		<field name="id" type="hidden" />
+
+		<field name="title"
+			   type="text"
+			   label="Заголовок (UA)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="title_ru"
+			   type="text"
+			   label="Заголовок (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="alias"
+			   type="text"
+			   label="Алиас"
+			   class="inputbox"
+			   default="" />
+
+		<field name="category_id"
+			   type="servicecategory"
+			   label="Категория" />
+
+		<field name="description"
+			   type="textarea"
+			   label="Описание (UA)"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="description_ru"
+			   type="textarea"
+			   label="Описание (RU)"
+			   rows="10"
+			   class="inputbox"
+			   default="" />
+
+		<field name="images"
+			   type="media"
+			   label="Фото (желательный размер изображения 370х370px)"
+			   directory="services" />
+
+		<field name="background"
+			   type="media"
+			   label="Фоновая картинка (желательная ширина изображения 1920px)"
+			   required="true"
+			   directory="services/backgrounds" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

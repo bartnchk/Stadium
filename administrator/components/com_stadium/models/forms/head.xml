@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали представителя администрации">
+
+		<field name="id" type="hidden" />
+
+		<field name="name"
+		       type="text"
+		       label="Имя"
+		       class="inputbox"
+		       required="true"
+		       default="" />
+
+		<field name="surname"
+			   type="text"
+			   label="Фамилия"
+			   class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="description"
+			   type="textarea"
+			   label="Описание (UA)"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="description_ru"
+			   type="textarea"
+			   label="Описание (RU)"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="position"
+			   type="text"
+			   label="Должность (UA)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="position_ru"
+			   type="text"
+			   label="Должность (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="phone"
+			   type="tel"
+			   label="Телефон"
+			   class="inputbox"
+			   default="" />
+
+		<field name="email"
+		       type="email"
+		       label="E-mail"
+			   required="true"
+			   class="inputbox"
+		       default="" />
+
+		<field name="photo"
+			   type="media"
+			   label="Фото (желательный размер фото 300х300 px)"
+			   required="true"
+			   directory="heads" />
+
+		<field name="social"
+			   type="text"
+			   label="Facebook" />
+
+		<field name="ordering"
+			   type="number"
+			   label="Порядок" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

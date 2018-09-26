@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали">
+
+		<field name="id" type="hidden" />
+
+		<field name="name"
+		       type="text"
+		       label="Имя"
+		       class="inputbox"
+		       required="true"
+		       default="" />
+
+		<field name="surname"
+			   type="text"
+			   label="Фамилия"
+			   class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="birth"
+			   type="calendar"
+			   label="Дата пождения"
+			   class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="description"
+			   type="textarea"
+			   label="Описание"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="photo"
+			   type="media"
+			   label="Фото (желательная ширина изображения 500px)"
+			   required="true"
+			   directory="team" />
+
+		<field name="category" type="radio" default="0" label="В команде" class="btn-group btn-group-yesno">
+			<option value="1">Игрок</option>
+			<option value="2">Тренер</option>
+		</field>
+
+		<field name="number"
+			   type="text"
+			   label="Номер игрока"
+			   showon="category:1">
+		</field>
+
+		<field name="role"
+			   type="text"
+			   label="Роль"
+			   class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="published"
+			   type="list"
+			   label="Статус"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

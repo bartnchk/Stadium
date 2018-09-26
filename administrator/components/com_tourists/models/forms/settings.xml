@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+
+    <fieldset name="settings">
+
+        <field name="title"
+               type="text"
+               label="Заголовок"
+        />
+
+        <field name="description"
+               type="textarea"
+               rows="8"
+               label="Описание"
+        />
+
+        <field name="site"
+               type="text"
+               label="Site"
+        />
+
+        <field name="address"
+               type="text"
+               label="Адрес"
+        />
+
+        <field name="facebook"
+               type="text"
+               label="Facebook"
+        />
+
+        <field name="twitter"
+               type="text"
+               label="Twitter"
+        />
+
+        <field name="instagram"
+               type="text"
+               label="Instagram"
+        />
+
+    </fieldset>
+
+    <fieldset name="achievements">
+
+        <field name="achievements"
+               type="subform"
+               formsource="administrator/components/com_tourists/models/forms/achievements.xml"
+               label="Достижения"
+               description="Subform Field Description"
+               buttons= "add,remove"
+               multiple="true"
+               layout="joomla.form.field.subform.repeatable-table"
+        />
+
+    </fieldset>
+
+</form>

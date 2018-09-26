@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="rules">
+
+        <field name="rules"
+               type="editor"
+               label="Rules"
+               filter="raw"
+        />
+
+    </fieldset>
+</form>

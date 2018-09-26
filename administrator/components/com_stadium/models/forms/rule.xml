@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали">
+
+		<field name="id" type="hidden" />
+
+		<field name="title" 
+		       type="text"
+		       label="Раздел (UA)"
+		       class="inputbox"
+		       default="" />
+
+		<field name="title_ru"
+			   type="text"
+			   label="Раздел (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="rules"
+			   type="zrules"
+			   label="Паравила (UA)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

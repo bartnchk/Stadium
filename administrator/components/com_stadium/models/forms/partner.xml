@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Event details">
+
+<field name="id" type="hidden" />
+
+		<field name="title"
+			   type="text"
+			   label="Партнёр"
+			   class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="description"
+			   type="textarea"
+			   label="Описание (UA)"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="description_ru"
+			   type="textarea"
+			   label="Описание (RU)"
+			   class="inputbox"
+			   rows="10"
+			   default="" />
+
+		<field name="image"
+			   type="media"
+			   label="Лого"
+			   required="true"
+			   directory="partners" />
+
+		<field name="background"
+			   type="media"
+			   label="Фоновая картинка (рекомендуемый размер изображения 380х380 px)"
+
+			   directory="partners/backgrounds" />
+
+		<field name="site"
+			   type="text"
+			   label="Сайт"
+			   class="inputbox"
+			   default="" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

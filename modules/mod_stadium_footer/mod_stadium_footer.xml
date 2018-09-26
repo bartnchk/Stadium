@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="module" version="3.8.0" client="site" method="upgrade">
+
+	<name>Stadium Footer</name>
+	<author>Zengineers</author>
+	<authorEmail>zengineers.company@gmail.com</authorEmail>
+	<creationDate>22.09.2017</creationDate>
+	<version>1.0.0</version>
+	<description>Display site footer</description>
+
+	<files>
+
+		<filename module="mod_stadium_footer">mod_stadium_footer.php</filename>
+		<filename>mod_stadium_footer.xml</filename>
+		<folder>tmpl</folder>
+
+	</files>
+
+</extension>

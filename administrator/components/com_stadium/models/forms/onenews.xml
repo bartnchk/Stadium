@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали новости">
+		<field name="id" type="hidden" />
+
+		<field name="title"
+		       type="text"
+		       label="Заголовок (UA)"
+		       class="inputbox"
+		       default="" />
+
+		<field name="title_ru"
+			   type="text"
+			   label="Заголовок (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="alias"
+			   type="text"
+			   label="Алиас"
+			   class="inputbox"
+			   default="" />
+
+		<field name="category_id"
+			   type="newscategory"
+			   required="true"
+			   label="Категория" />
+
+		<field name="description"
+			   type="editor"
+			   label="Содержание (UA)"
+			   class="inputbox"
+			   filter="RAW"
+			   default="" />
+
+		<field name="description_ru"
+			   type="editor"
+			   label="Содержание (RU)"
+			   class="inputbox"
+			   filter="RAW"
+			   default="" />
+
+		<field name="date"
+			   type="calendar"
+			   label="Дата"
+		       class="inputbox"
+			   required="true"
+			   default="" />
+
+		<field name="background"
+			   type="media"
+			   label="Главное фото (желательная ширина изображения 770px)"
+			   required="true"
+			   directory="news" />
+
+		<field name="image"
+			   type="media"
+			   label="Дополнительное фото (желательная ширина изображения 770px)"
+			   directory="news" />
+
+	    <field name="video"
+	    	   type="textarea"
+	    	   label="Видео"
+	    	   default=""
+			   rows="10"
+			   filter="RAW" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

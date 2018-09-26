@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали мероприятия">
+
+		<field name="id" type="hidden" />
+
+		<field name="title"
+			type="text"
+			label="Название (UA)"
+			class="inputbox"
+			default="" />
+
+		<field name="title_ru"
+			type="text"
+			label="Название (RU)"
+			class="inputbox"
+			default="" />
+
+		<field name="description"
+			type="textarea"
+			label="Описание (UA)"
+			class="inputbox"
+		    rows="10"
+			default="" />
+
+		<field name="description_ru"
+			type="textarea"
+			label="Описание (RU)"
+			class="inputbox"
+		    rows="10"
+			default="" />
+
+		<field name="is_free"
+			type="radio"
+		    class="btn-group btn-group-yesno"
+		    label="Мероприятие"
+			default="0">
+			<option value="0">Бесплатное</option>
+			<option value="1">Платное</option>
+		</field>
+
+		<field name="price"
+			type="text"
+			label="Стоимость"
+			class="inputbox"
+			showon="is_free:1"
+		    default="" />
+
+		<field name="image"
+			type="media"
+			label="Фото (желательный размер изображения 370х250 px)"
+			required="true"
+			directory="events" />
+
+		<field name="date"
+			type="calendar"
+			label="Дата"
+			required="true"
+			default="" />
+
+		<field name="time"
+			type="text"
+			label="Время"
+			required="true"
+			default="" />
+
+		<field name="link"
+			type="text"
+			label="Ссылка (Musin)"
+			default="" />
+
+		<field name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			filter="intval"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

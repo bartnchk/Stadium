@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+
+	<fieldset
+			name="component"
+			label="Settings"
+			description="Settings"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="address"
+				type="text"
+				label="Адрес"
+		/>
+
+		<field
+				name="phone"
+				type="text"
+				label="Телефон"
+		/>
+
+		<field
+				name="email"
+				type="text"
+				label="E-mail"
+		/>
+
+		<field
+				name="about"
+				type="editor"
+				label="О стадионе"
+				filter="RAW"
+		/>
+
+		<field
+				name="instagram"
+				type="text"
+				label="Instagram"
+		/>
+
+		<field
+				name="facebook"
+				type="text"
+				label="Facebook"
+		/>
+
+		<field
+				name="youtube"
+				type="text"
+				label="YouTube"
+		/>
+
+	</fieldset>
+
+
+
+	<fieldset
+			name="services"
+			label="стр. Услуги"
+			description="Контент страницы услуг"
+			addfieldpath="administrator/components/com_delivery/models/fields"
+	>
+
+		<field
+				name="services_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+				default=""
+		/>
+
+		<field
+				name="services_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+				default=""
+		/>
+
+		<field
+				name="services_title_ua"
+				type="text"
+				label="Заголовок (UA)"
+				default=""
+		/>
+
+		<field
+				name="services_title_ru"
+				type="text"
+				label="Заголовок (RU)"
+				default=""
+		/>
+
+		<field
+				name="services_content_ua"
+				type="editor"
+				label="Контент (UA)"
+				default=""
+		/>
+
+		<field
+				name="services_content_ru"
+				type="editor"
+				label="Контент (RU)"
+				default=""
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="media"
+			label="стр. Медиа"
+			description="Контент страницы медиа"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="media_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="media_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="partners"
+			label="стр. Партнёры"
+			description="Контент страницы партнёры"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="partners_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="partners_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="contacts"
+			label="стр. Контакты"
+			description="Контент страницы контакты"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="contacts_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+				filter=""
+		/>
+
+		<field
+				name="contacts_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+				filter=""
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="metallurg"
+			label="стр. МФК «МЕТАЛУРГ»"
+			description="Контент страницы МФК «МЕТАЛУРГ»"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="metallurg_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="metallurg_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+		<field
+				name="symbol_metallurg_page_description_ua"
+				type="textarea"
+				label="Символика (UA)"
+		/>
+
+		<field
+				name="symbol_metallurg_page_description_ru"
+				type="textarea"
+				label="Символика (RU)"
+		/>
+
+		<field
+				name="metallurg_symbol_page_description_ua"
+				type="textarea"
+				label="Металлург (UA)"
+		/>
+
+		<field
+				name="metallurg_symbol_page_description_ru"
+				type="textarea"
+				label="Металлург (RU)"
+		/>
+
+
+	</fieldset>
+
+	<fieldset
+			name="instaphoto"
+			label="стр. #СЛАВУТИЧАРЕНА"
+			description="Контент страницы #СЛАВУТИЧАРЕНА"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="instaphoto_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="instaphoto_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+		<field
+				name="instaphoto_page_text_ua"
+				type="textarea"
+				label="Текст (UA)"
+		/>
+
+		<field
+				name="instaphoto_page_text_ru"
+				type="textarea"
+				label="Текст (RU)"
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="about"
+			label="стр. Про стадион"
+			description="Контент страницы Про стадион"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="about_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="about_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+		<field
+				name="about_page_admin_description_ua"
+				type="textarea"
+				label="Администрация (UA)"
+		/>
+
+		<field
+				name="about_page_admin_description_ru"
+				type="textarea"
+				label="Администрация (RU)"
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="history"
+			label="стр. Великое прошлое"
+			description="Контент страницы Великое прошлое"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="history_page_description_ua"
+				type="textarea"
+				label="Великое прошлое текст (UA)"
+		/>
+
+		<field
+				name="history_page_description_ru"
+				type="textarea"
+				label="Великое прошлое текст (RU)"
+		/>
+
+		<field
+				name="history_page_stadium_today_ua"
+				type="textarea"
+				label="Стадион сегодня текст (UA)"
+		/>
+
+		<field
+				name="history_page_stadium_today_ru"
+				type="textarea"
+				label="Стадион сегодня текст (RU)"
+		/>
+
+	</fieldset>
+
+	<fieldset
+			name="zrules"
+			label="стр. Правила поведения"
+			description="Контент страницы Правила поведения"
+			addfieldpath="administrator/components/com_stadium/models/fields"
+	>
+
+		<field
+				name="rules_page_description_ua"
+				type="textarea"
+				label="Описание (UA)"
+		/>
+
+		<field
+				name="rules_page_description_ru"
+				type="textarea"
+				label="Описание (RU)"
+		/>
+
+	</fieldset>
+
+
+	<fieldset name="permissions"
+			  label="JCONFIG_PERMISSIONS_LABEL"
+			  description="">
+
+		<field name="rules" type="rules"
+			   component="com_stadium"
+			   filter="rules"
+			   validate="rules"
+			   label="JCONFIG_PERMISSIONS_LABEL"
+			   section="component" />
+
+	</fieldset>
+
+</config>

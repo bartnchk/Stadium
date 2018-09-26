@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали категории новостей">
+
+		<field name="id" type="hidden" />
+
+		<field name="title"
+		       type="text"
+		       label="Заголовок (UA)"
+		       class="inputbox"
+		       default="" />
+
+		<field name="title_ru"
+			   type="text"
+			   label="Заголовок (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="alias"
+			   type="text"
+			   label="Алиас"
+			   class="inputbox"
+			   default="" />
+
+		<field name="description"
+			   type="text"
+			   label="Описание (UA)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="description_ru"
+			   type="text"
+			   label="Описание (RU)"
+			   class="inputbox"
+			   default="" />
+
+		<field name="image"
+			   type="media"
+			   required="true"
+			   label="Фото (желательная ширина изображения 500px)"
+			   directory="services/categories" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

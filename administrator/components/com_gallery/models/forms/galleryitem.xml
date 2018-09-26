@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Детали галереи">
+
+		<field name="id" type="hidden" />
+
+		<field name="title" 
+		       type="text"
+		       label="Название галереи"
+		       class="inputbox"
+		       required="true"
+		       default="" />
+
+		<field name="img"
+			   type="pics"
+			   label="Отель"
+			   default="" />
+
+	</fieldset>
+</form>
